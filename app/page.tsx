@@ -428,9 +428,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 Testimonials
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Loved by Teams Worldwide</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">来自用户的评价</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Don't just take our word for it. See what our customers have to say about their experience.
+                看看我们的用户怎么说
               </p>
             </motion.div>
 
@@ -438,44 +438,44 @@ export default function LandingPage() {
               {[
                 {
                   quote:
-                    "SaaSify has transformed how we manage our projects. The automation features have saved us countless hours of manual work.",
+                    "可能是市面最好用的跟单工具，性价比极高，网站也很简洁。",
                   author: "Sarah Johnson",
-                  role: "Project Manager, TechCorp",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The analytics dashboard provides insights we never had access to before. It's helped us make data-driven decisions that have improved our ROI.",
+                    "用了五个月，一直在用，也没用过其他的软件。非常稳定，开发者更新频率也非常高。",
                   author: "Michael Chen",
-                  role: "Marketing Director, GrowthLabs",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Customer support is exceptional. Any time we've had an issue, the team has been quick to respond and resolve it. Couldn't ask for better service.",
+                    "我有自己的交易社群，用了跟单猿之后，我尝试选择和跟单猿合作推广。我社群里的用户也都非常喜欢这个工具，真的是什么都能跟。",
                   author: "Emily Rodriguez",
-                  role: "Operations Lead, StartupX",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
                 {
                   quote:
-                    "We've tried several similar solutions, but none compare to the ease of use and comprehensive features of SaaSify. It's been a game-changer.",
+                    "一直在找可以复制别人交易仓位的软件，通过搜索找到的，让我眼前一亮，感谢开发者开发了这么牛逼工具。",
                   author: "David Kim",
-                  role: "CEO, InnovateNow",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The collaboration tools have made remote work so much easier for our team. We're more productive than ever despite being spread across different time zones.",
+                    "朋友介绍用的，就是为了可以跟单浪浪，跟单浪浪在上半年的时候反了不少倍，希望跟单猿越来越牛逼。",
                   author: "Lisa Patel",
-                  role: "HR Director, RemoteFirst",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Implementation was seamless, and the ROI was almost immediate. We've reduced our operational costs by 30% since switching to SaaSify.",
+                    "用了五个月，一直在用，也没用过其他的软件。非常稳定，开发者更新频率也非常高。",
                   author: "James Wilson",
-                  role: "COO, ScaleUp Inc",
+                  role: "匿名OK用户",
                   rating: 5,
                 },
               ].map((testimonial, i) => (
@@ -526,11 +526,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Pricing
+                产品价格
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Simple, Transparent Pricing</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">产品价格</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Choose the plan that's right for your business. All plans include a 14-day free trial.
+                选择合适你的订阅计划
               </p>
             </motion.div>
 
@@ -539,10 +539,10 @@ export default function LandingPage() {
                 <div className="flex justify-center mb-8">
                   <TabsList className="rounded-full p-1">
                     <TabsTrigger value="monthly" className="rounded-full px-6">
-                      Monthly
+                      月付
                     </TabsTrigger>
                     <TabsTrigger value="annually" className="rounded-full px-6">
-                      Annually (Save 20%)
+                     年付（节约10%）
                     </TabsTrigger>
                   </TabsList>
                 </div>
@@ -550,39 +550,39 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Starter",
-                        price: "$29",
-                        description: "Perfect for small teams and startups.",
-                        features: ["Up to 5 team members", "Basic analytics", "5GB storage", "Email support"],
-                        cta: "Start Free Trial",
+                        name: "免费体验",
+                        price: "$0",
+                        description: "可使用基础跟单功能",
+                        features: ["跟单欧意交易员", "欧意模拟盘/实盘", "普通交易 (延迟2-4秒)", "资产限额2000USDT"],
+                        cta: "立刻体验",
                       },
                       {
-                        name: "Professional",
-                        price: "$79",
-                        description: "Ideal for growing businesses.",
+                        name: "VIP会员",
+                        price: "登录后查看",
+                        description: "可使用完整跟单功能",
                         features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
+                          "跟单币安交易员",
+                          "币安实盘",
+                          "交易消息通知",
+                          "极速交易 (延迟1秒左右)",
+                          "赠送30天固定海外IP",
+                          "资产限额5000USDT"
                         ],
-                        cta: "Start Free Trial",
+                        cta: "立刻体验",
                         popular: true,
                       },
                       {
-                        name: "Enterprise",
-                        price: "$199",
-                        description: "For large organizations with complex needs.",
+                        name: "私有化部署",
+                        price: "登录后查看",
+                        description: "针对大资金客户可私有化定制交易服务",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
-                          "Custom integrations",
+                          "会员全部功能",
+                          "资产限额5万USDT起 (付费提额)",
+                          "极速交易 (延迟0.5秒左右)",
+                          "定制功能需求",
+                          "亚马逊服务器 (交易所内网)",
                         ],
-                        cta: "Contact Sales",
+                        cta: "联系客服",
                       },
                     ].map((plan, i) => (
                       <motion.div
@@ -604,7 +604,6 @@ export default function LandingPage() {
                             <h3 className="text-2xl font-bold">{plan.name}</h3>
                             <div className="flex items-baseline mt-4">
                               <span className="text-4xl font-bold">{plan.price}</span>
-                              <span className="text-muted-foreground ml-1">/month</span>
                             </div>
                             <p className="text-muted-foreground mt-2">{plan.description}</p>
                             <ul className="space-y-3 my-6 flex-grow">
@@ -631,39 +630,39 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Starter",
-                        price: "$23",
-                        description: "Perfect for small teams and startups.",
-                        features: ["Up to 5 team members", "Basic analytics", "5GB storage", "Email support"],
-                        cta: "Start Free Trial",
+                        name: "免费体验",
+                        price: "$0",
+                        description: "可使用基础跟单功能",
+                        features: ["跟单欧意交易员", "欧意模拟盘/实盘", "普通交易 (延迟2-4秒)", "资产限额2000USDT"],
+                        cta: "立刻体验",
                       },
                       {
-                        name: "Professional",
-                        price: "$63",
-                        description: "Ideal for growing businesses.",
+                        name: "VIP会员",
+                        price: "登录后查看",
+                        description: "可使用完整跟单功能",
                         features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
+                          "跟单币安交易员",
+                          "币安实盘",
+                          "交易消息通知",
+                          "极速交易 (延迟1秒左右)",
+                          "赠送30天固定海外IP",
+                          "资产限额5000USDT"
                         ],
-                        cta: "Start Free Trial",
+                        cta: "立刻体验",
                         popular: true,
                       },
                       {
-                        name: "Enterprise",
-                        price: "$159",
-                        description: "For large organizations with complex needs.",
+                        name: "私有化部署",
+                        price: "登录后查看",
+                        description: "针对大资金客户可私有化定制交易服务",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
-                          "Custom integrations",
+                          "会员全部功能",
+                          "资产限额5万USDT起 (付费提额)",
+                          "极速交易 (延迟0.5秒左右)",
+                          "定制功能需求",
+                          "亚马逊服务器 (交易所内网)",
                         ],
-                        cta: "Contact Sales",
+                        cta: "联系客服",
                       },
                     ].map((plan, i) => (
                       <motion.div
@@ -685,7 +684,6 @@ export default function LandingPage() {
                             <h3 className="text-2xl font-bold">{plan.name}</h3>
                             <div className="flex items-baseline mt-4">
                               <span className="text-4xl font-bold">{plan.price}</span>
-                              <span className="text-muted-foreground ml-1">/month</span>
                             </div>
                             <p className="text-muted-foreground mt-2">{plan.description}</p>
                             <ul className="space-y-3 my-6 flex-grow">
@@ -726,9 +724,9 @@ export default function LandingPage() {
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
                 FAQ
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">常见问题</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Find answers to common questions about our platform.
+                查看常见问题回复
               </p>
             </motion.div>
 
@@ -801,27 +799,27 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ready to Transform Your Workflow?
+                还有疑问?
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Join thousands of satisfied customers who have streamlined their processes and boosted productivity with
-                our platform.
+                如果你还有问题或疑问，可以联系我们团队寻求帮助！
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <Button size="lg" variant="secondary" className="rounded-full h-12 px-8 text-base">
-                  Start Free Trial
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
-                >
-                  Schedule a Demo
-                </Button>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-2 text-xl text-white">
+                    <span className="font-medium">Q群：</span>
+                    <a className="text-white">
+                      11111
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2 text-xl text-white">
+                    <span className="font-medium">微信：</span>
+                    <span className="text-white">1111</span>
+                  </div>
+                </div>
               </div>
               <p className="text-sm text-primary-foreground/80 mt-4">
-                No credit card required. 14-day free trial. Cancel anytime.
+                {/*No credit card required. 14-day free trial. Cancel anytime.*/}
               </p>
             </motion.div>
           </div>
@@ -835,10 +833,10 @@ export default function LandingPage() {
                 <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
                   S
                 </div>
-                <span>SaaSify</span>
+                <span>追单易</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Streamline your workflow with our all-in-one SaaS platform. Boost productivity and scale your business.
+                跟单自动化，效率自然化
               </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
