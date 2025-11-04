@@ -100,7 +100,7 @@ export default function LandingPage() {
   ]
 
   const isMobile = useIsMobile()
-  const loginUrl = isMobile ? "https://app.btc809.com/agent-login" : "https://pc.btc809.com/login"
+  const loginUrl = isMobile ? "https://app.simpletofollow.site/agent-login" : "https://pc.simpletofollow.site/login"
 
   return (
     <div className="flex min-h-[100dvh] flex-col">
@@ -150,7 +150,7 @@ export default function LandingPage() {
               <span className="sr-only">Toggle theme</span>
             </Button>
             <Link
-              href="https://pc.btc809.com/login"
+              href="https://pc.simpletofollow.site/login"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               注册 / 登录
@@ -193,7 +193,7 @@ export default function LandingPage() {
                 常见问题
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t">
-                <Link href="https://app.btc809.com/agent-login" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="https://app.simpletofollow.site/agent-login" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
                   注册 / 登录
                 </Link>
               </div>
