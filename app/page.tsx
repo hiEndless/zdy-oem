@@ -67,33 +67,33 @@ export default function LandingPage() {
 
   const features = [
     {
-      title: "Smart Automation",
-      description: "Automate repetitive tasks and workflows to save time and reduce errors.",
+      title: "极速交易",
+      description: "针对不同的交易所，智能切换交易服务器，1s内完成交易",
       icon: <Zap className="size-5" />,
     },
     {
-      title: "Advanced Analytics",
-      description: "Gain valuable insights with real-time data visualization and reporting.",
+      title: "跟单主流交易所",
+      description: "凡是在交易所上有公开带单的交易员，都支持跟单",
       icon: <BarChart className="size-5" />,
     },
     {
-      title: "Team Collaboration",
-      description: "Work together seamlessly with integrated communication tools.",
+      title: "跨平台跟单",
+      description: "可以使用OK账户跟单币安，也可以使用币安账户跟单OK",
       icon: <Users className="size-5" />,
     },
     {
-      title: "Enterprise Security",
-      description: "Keep your data safe with end-to-end encryption and compliance features.",
+      title: "反向跟单",
+      description: "对跟单的交易员进行反向交易，交易员开多，你便开空",
       icon: <Shield className="size-5" />,
     },
     {
-      title: "Seamless Integration",
-      description: "Connect with your favorite tools through our extensive API ecosystem.",
+      title: "热门交易员跟单",
+      description: "全网搜寻并监控热门交易员，实时进行跟单",
       icon: <Layers className="size-5" />,
     },
     {
-      title: "24/7 Support",
-      description: "Get help whenever you need it with our dedicated support team.",
+      title: "API跟单/带单",
+      description: "可以自定义上传需要跟单的API，自己或者他人都可以跟随该API进行交易",
       icon: <Star className="size-5" />,
     },
   ]
@@ -108,32 +108,32 @@ export default function LandingPage() {
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
               S
             </div>
-            <span>SaaSify</span>
+            <span>追单易</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
               href="#features"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Features
+              产品功能
             </Link>
             <Link
               href="#testimonials"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Testimonials
+              用户推荐
             </Link>
             <Link
               href="#pricing"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Pricing
+              产品价格
             </Link>
             <Link
               href="#faq"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              FAQ
+              常见问题
             </Link>
           </nav>
           <div className="hidden md:flex gap-4 items-center">
@@ -145,10 +145,10 @@ export default function LandingPage() {
               href="#"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Log in
+              登录
             </Link>
             <Button className="rounded-full">
-              Get Started
+              马上开始
               <ChevronRight className="ml-1 size-4" />
             </Button>
           </div>
@@ -172,23 +172,23 @@ export default function LandingPage() {
           >
             <div className="container py-4 flex flex-col gap-4">
               <Link href="#features" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                Features
+                产品功能
               </Link>
               <Link href="#testimonials" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                Testimonials
+                用户推荐
               </Link>
               <Link href="#pricing" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                Pricing
+                产品价格
               </Link>
               <Link href="#faq" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                FAQ
+                常见问题
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t">
                 <Link href="#" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                  Log in
+                  登录
                 </Link>
                 <Button className="rounded-full">
-                  Get Started
+                  马上开始
                   <ChevronRight className="ml-1 size-4" />
                 </Button>
               </div>
@@ -209,36 +209,35 @@ export default function LandingPage() {
               className="text-center max-w-3xl mx-auto mb-12"
             >
               <Badge className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Launching Soon
+                超10000+ 交易员正在使用
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Elevate Your Workflow with SaaSify
+                跟单自动化，效率自然化
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The all-in-one platform that helps teams collaborate, automate, and deliver exceptional results.
-                Streamline your processes and focus on what matters most.
+                全自动合约跟单交易助手。没有交易员盈利抽成，没有跟单席位限制，支持跨交易所和模拟盘跟单。
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="rounded-full h-12 px-8 text-base">
-                  Start Free Trial
+                  免费试用
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">
-                  Book a Demo
-                </Button>
+                {/*<Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">*/}
+                {/*  Book a Demo*/}
+                {/*</Button>*/}
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>No credit card</span>
+                  <span>0延迟跟单</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>14-day trial</span>
+                  <span>3天免费使用</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Cancel anytime</span>
+                  <span>支持多个主流交易所</span>
                 </div>
               </div>
             </motion.div>
@@ -270,18 +269,44 @@ export default function LandingPage() {
         <section className="w-full py-12 border-y bg-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <p className="text-sm font-medium text-muted-foreground">Trusted by innovative companies worldwide</p>
+              <p className="text-sm font-medium text-muted-foreground">支持的跟单平台</p>
               <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Image
-                    key={i}
-                    src={`/placeholder-logo.svg`}
-                    alt={`Company logo ${i}`}
-                    width={120}
+                <Image
+                    src={`/binance.png`}
+                    width={60}
                     height={60}
                     className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                  />
-                ))}
+                />
+                <Image
+                    src={`/okx.png`}
+                    width={60}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                />
+                <Image
+                    src={`/gate.png`}
+                    width={60}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                />
+                <Image
+                    src={`/bitget.png`}
+                    width={60}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                />
+                <Image
+                    src={`/bicoin.png`}
+                    width={60}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                />
+                <Image
+                    src={`/hlq_logo.png`}
+                    width={60}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                />
               </div>
             </div>
           </div>
@@ -298,12 +323,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                Features
+                产品功能
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Everything You Need to Succeed</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">看看我们都为您准备了哪些功能</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Our comprehensive platform provides all the tools you need to streamline your workflow, boost
-                productivity, and achieve your goals.
+                我们全面的平台提供您所需的所有工具，以简化您的跟单流程，节省您的交易分润。
               </p>
             </motion.div>
 
@@ -344,11 +368,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                How It Works
+                如何跟单
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Simple Process, Powerful Results</h2>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">轻松开始！体验强大的跟单系统！</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Get started in minutes and see the difference our platform can make for your business.
+                仅仅只需简单3步，立刻开始跟单
               </p>
             </motion.div>
 
@@ -358,18 +382,18 @@ export default function LandingPage() {
               {[
                 {
                   step: "01",
-                  title: "Create Account",
-                  description: "Sign up in seconds with just your email. No credit card required to get started.",
+                  title: "提交API",
+                  description: "在交易所创建你的跟单API，并提交。",
                 },
                 {
                   step: "02",
-                  title: "Configure Workspace",
-                  description: "Customize your workspace to match your team's unique workflow and requirements.",
+                  title: "选择交易员",
+                  description: "选择你想跟单的交易员",
                 },
                 {
                   step: "03",
-                  title: "Boost Productivity",
-                  description: "Start using our powerful features to streamline processes and achieve your goals.",
+                  title: "创建跟单",
+                  description: "填写你的基本设置信息，比如投资金额、杠杆设置，立刻开始跟单！",
                 },
               ].map((step, i) => (
                 <motion.div
@@ -712,34 +736,34 @@ export default function LandingPage() {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    question: "How does the 14-day free trial work?",
+                    question: "能否使用OK账户跟单币安的交易员？",
                     answer:
-                      "Our 14-day free trial gives you full access to all features of your selected plan. No credit card is required to sign up, and you can cancel at any time during the trial period with no obligation.",
+                      "我们支持使用OK跟单币安的交易员，也支持使用币安跟单OK的交易员。",
                   },
                   {
-                    question: "Can I change plans later?",
+                    question: "交易员隐藏了实盘是否可以跟单？",
                     answer:
-                      "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle. If you downgrade, the new pricing will take effect at the start of your next billing cycle.",
+                      "使用普通的跟单服务，在隐藏实盘的情况下无法跟单，比如OK的隐藏带单数据，以及币安的私域跟单，都是无法进行跟单的。此时可以使用我们的高级跟单服务，可以突破交易所隐藏限制，帮你实现跟单。",
                   },
                   {
-                    question: "Is there a limit to how many users I can add?",
+                    question: "使用跟单交易所的交易员时为什么会有延迟？",
                     answer:
-                      "The number of users depends on your plan. The Starter plan allows up to 5 team members, the Professional plan allows up to 20, and the Enterprise plan has no limit on team members.",
+                      "交易所的延迟是交易所系统设置的，比如OK有5分钟的开仓展示延迟。如果想突破延迟，实现实时跟单，我们也提供了高级的跟单服务。",
                   },
                   {
-                    question: "Do you offer discounts for nonprofits or educational institutions?",
+                    question: "是否可以同时跟单多个交易员？",
                     answer:
-                      "Yes, we offer special pricing for nonprofits, educational institutions, and open-source projects. Please contact our sales team for more information.",
+                      "出于对交易稳定性的考虑，我们只允许一个交易所账户同时跟单一个交易员，如果你需要跟单多个交易员，可以在交易所申请子账号，将子账号的api授权给我们，这样就可以同时跟单多个交易员。",
                   },
                   {
-                    question: "How secure is my data?",
+                    question: "如何才能提高资产金额限制，用更多的资金进行跟单？",
                     answer:
-                      "We take security very seriously. All data is encrypted both in transit and at rest. We use industry-standard security practices and regularly undergo security audits. Our platform is compliant with GDPR, CCPA, and other relevant regulations.",
+                      "出于对用户资产的保护，避免交易时因滑点导致过多的资金损失，我们限制了用户使用软件的资产上限。如果你需要更多的资金交易，请联系我们购买私有化部署服务，我们将为你部署交易服务到你自己的服务器上，你可以获得更低的交易延迟，同时我们也将免费为你远程维护服务！",
                   },
                   {
-                    question: "What kind of support do you offer?",
+                    question: "如何确保我的账户资金安全？",
                     answer:
-                      "Support varies by plan. All plans include email support, with the Professional plan offering priority email support. The Enterprise plan includes 24/7 phone and email support. We also have an extensive knowledge base and community forum available to all users.",
+                      "我们要求用户提交的api不要添加交易所资金权限，交易所可以很好的保护你的资金安全。同时我们也向用户提供了专属ip绑定到api上，在其他ip地址下无法通过api操作你的账户！",
                   },
                 ].map((faq, i) => (
                   <motion.div
