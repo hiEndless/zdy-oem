@@ -25,6 +25,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useTheme } from "next-themes"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -98,6 +99,9 @@ export default function LandingPage() {
     },
   ]
 
+  const isMobile = useIsMobile()
+  const loginUrl = isMobile ? "https://app.btc809.com/agent-login" : "https://pc.btc809.com/login"
+
   return (
     <div className="flex min-h-[100dvh] flex-col">
       <header
@@ -142,15 +146,16 @@ export default function LandingPage() {
               <span className="sr-only">Toggle theme</span>
             </Button>
             <Link
-              href="#"
+              href="https://pc.btc809.com/login"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              登录
+              注册 / 登录
             </Link>
-            <Button className="rounded-full">
-              马上开始
-              <ChevronRight className="ml-1 size-4" />
-            </Button>
+
+            {/*<Button className="rounded-full">*/}
+            {/*  马上开始*/}
+            {/*  <ChevronRight className="ml-1 size-4" />*/}
+            {/*</Button>*/}
           </div>
           <div className="flex items-center gap-4 md:hidden">
             <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full">
@@ -184,13 +189,9 @@ export default function LandingPage() {
                 常见问题
               </Link>
               <div className="flex flex-col gap-2 pt-2 border-t">
-                <Link href="#" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
-                  登录
+                <Link href="https://app.btc809.com/agent-login" className="py-2 text-sm font-medium" onClick={() => setMobileMenuOpen(false)}>
+                  注册 / 登录
                 </Link>
-                <Button className="rounded-full">
-                  马上开始
-                  <ChevronRight className="ml-1 size-4" />
-                </Button>
               </div>
             </div>
           </motion.div>
@@ -218,13 +219,12 @@ export default function LandingPage() {
                 全自动合约跟单交易助手。没有交易员盈利抽成，没有跟单席位限制，支持跨交易所和模拟盘跟单。
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="rounded-full h-12 px-8 text-base">
-                  免费试用
-                  <ArrowRight className="ml-2 size-4" />
-                </Button>
-                {/*<Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base">*/}
-                {/*  Book a Demo*/}
-                {/*</Button>*/}
+                <Link href={loginUrl}>
+                  <Button size="lg" className="rounded-full h-12 px-8 text-base">
+                    免费试用
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </Link>
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
@@ -809,12 +809,12 @@ export default function LandingPage() {
                   <div className="flex items-center gap-2 text-xl text-white">
                     <span className="font-medium">Q群：</span>
                     <a className="text-white">
-                      11111
+                      906377619
                     </a>
                   </div>
                   <div className="flex items-center gap-2 text-xl text-white">
                     <span className="font-medium">微信：</span>
-                    <span className="text-white">1111</span>
+                    <span className="text-white">ab838988778</span>
                   </div>
                 </div>
               </div>
@@ -972,7 +972,7 @@ export default function LandingPage() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} SaaSify. All rights reserved.
+              &copy; {new Date().getFullYear()} All rights reserved.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
