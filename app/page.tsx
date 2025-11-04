@@ -331,7 +331,7 @@ export default function LandingPage() {
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">看看我们都为您准备了哪些功能</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                我们全面的平台提供您所需的所有工具，以简化您的跟单流程，节省您的交易分润。
+                比交易所直接跟单功能更强
               </p>
             </motion.div>
 
