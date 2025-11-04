@@ -109,9 +109,13 @@ export default function LandingPage() {
       >
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
-            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-              S
-            </div>
+            <Image
+                src="/okx.png"
+                alt="logo"
+                width={24}
+                height={24}
+                className="w-8 h-8"
+            />
             <span>追单易</span>
           </div>
           <nav className="hidden md:flex gap-8">
@@ -830,9 +834,13 @@ export default function LandingPage() {
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
             <div className="space-y-4">
               <div className="flex items-center gap-2 font-bold">
-                <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-                  S
-                </div>
+                <Image
+                    src="/okx.png"
+                    alt="logo"
+                    width={24}
+                    height={24}
+                    className="w-8 h-8"
+                />
                 <span>追单易</span>
               </div>
               <p className="text-sm text-muted-foreground">
