@@ -895,7 +895,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="space-y-4">
-              <h4 className="text-sm font-bold">Product</h4>
+              <h4 className="text-sm font-bold">产品</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -920,7 +920,7 @@ export default function LandingPage() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="text-sm font-bold">Resources</h4>
+              <h4 className="text-sm font-bold">资源</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -945,7 +945,7 @@ export default function LandingPage() {
               </ul>
             </div>
             <div className="space-y-4">
-              <h4 className="text-sm font-bold">Company</h4>
+              <h4 className="text-sm font-bold">公司</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
