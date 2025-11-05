@@ -116,7 +116,7 @@ export default function LandingPage() {
                 height={24}
                 className="w-8 h-8"
             />
-            <span>追单易</span>
+            <span>单易追</span>
           </div>
           <nav className="hidden md:flex gap-8">
             <Link
@@ -841,7 +841,7 @@ export default function LandingPage() {
                     height={24}
                     className="w-8 h-8"
                 />
-                <span>追单易</span>
+                <span>单易追</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 跟单自动化，效率自然化
