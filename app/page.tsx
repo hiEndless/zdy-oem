@@ -110,7 +110,7 @@ export default function LandingPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <Image
-                src="/okx.png"
+                src="/160.png"
                 alt="logo"
                 width={24}
                 height={24}
@@ -835,7 +835,7 @@ export default function LandingPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 font-bold">
                 <Image
-                    src="/okx.png"
+                    src="/160.png"
                     alt="logo"
                     width={24}
                     height={24}
